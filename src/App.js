@@ -1,7 +1,20 @@
 import React from "react";
+import LandingPage from "./components/home/landing-page";
+import "./App.css";
 
-function App() {
-  return <div className="App">Initial Commit</div>;
+export default class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      currentPage: "Home",
+    };
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <LandingPage />
+      </div>
+    );
+  }
 }
-
-export default App;

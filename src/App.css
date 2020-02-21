@@ -15,3 +15,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+.landing-page {
+  margin: auto;
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .landing-page__search-wrapper {
+    width: 33vw; }

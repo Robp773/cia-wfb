@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -16,12 +19,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 .landing-page {
-  margin: auto;
-  padding: 1rem;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  overflow: hidden; }
   .landing-page__search-wrapper {
-    width: 33vw; }
+    width: 33vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    margin-top: 5%;
+    padding: 1rem; }
